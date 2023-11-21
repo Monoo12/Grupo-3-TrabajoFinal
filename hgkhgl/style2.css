@@ -1,0 +1,101 @@
+div {
+    background-color: blueviolet;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    font-size: 20px;
+    border: 2px solid #333;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+div:first-of-type {
+    background-color: initial; /* Restaura el color de fondo predeterminado */
+    width: auto; /* Restaura el ancho predeterminado */
+    margin: 0; /* Restaura los márgenes predeterminados */
+    padding: 0; /* Restaura el relleno predeterminado */
+    display: initial; /* Restaura la propiedad de visualización predeterminada */
+    font-size: initial; /* Restaura el tamaño de fuente predeterminado */
+    border: none; /* Elimina el borde */
+    box-shadow: none; /* Elimina la sombra */
+}
+
+
+h1{
+    color: darkblue;
+    
+}
+
+h2 {
+    color: blue;
+    font-size: 25px;
+}
+
+C{
+    color: blue;
+    font-size: 20px;
+}
+D{
+    color: darkred;
+    font-size: 19px;
+}
+button{
+    font-style:italic;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: black;
+    color: white;
+    font-size: 17px;
+}
+body{
+    background-color: white;
+}
+
+.header{
+    background-color: rgb(12, 99, 142);
+        height: 80px;
+        width: auto;
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    .header .logo img{
+        height: 80px;
+        width: auto;
+        border-radius: 100%;
+        padding: 10px;
+        transition: 0.4s;
+    }
+    .header .logo img:hover{
+        transform: scale(1.2);
+    }
+    .header nav ul {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        padding: 0; 
+    }
+    .header nav li{
+        margin-right: 20px;
+    }
+    .header .nav-links a{
+        font-size: 23px;
+        color: #eceff1;
+        text-decoration: none;    
+    }
+    
+    .header .nav-links li a:hover{
+        color: rgb(1, 253, 190);
+    }
+   .header .btn button {
+    color: #020000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.header .btn button:hover {
+    transform: scale(1.1);
+}

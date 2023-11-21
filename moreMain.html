@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argentina Prime</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="sliderr.css">
+    <script type="module" src="verifLogin.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="middle">
+            <div class="logo">
+                <a href="main.html"><img src="/fotos/Logo-min.png" alt=""></a>
+            </div>
+            <nav>
+                <div class="nav-link">
+                    <a href="#">Inicio</a>
+                </div>
+                <div class="nav-link">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">Prime</a>
+                </div>
+                <div class="nav-link">
+                    <a href="https://www.themoviedb.org/"><i class="fas fa-info-circle"></i>_INFO</a>
+                </div>
+
+            </nav>
+            <div class="user-icon">
+                <a href="Selecciondeusuarios.html"><img src="https://occ-0-1701-185.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABbP3vZkraWbd0uWmKLJnHM7d5EKseZ4RjeWjLR6Fveqf-RAkIr-_GZXRqi-baUBsij3lRba43ozCS3RVEWmR8f4eiTnqVRT7sg.png?r=674" alt="user-icon"></a>
+                <div class="menu">
+                    <ul>
+                        <button onclick="logout() ">LogOut</button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+            <div id="slides">
+               <div id="overflow">
+                  <div class="inner">
+                     <div class="slide slide_1">
+                        
+                        <div class="slide-content">
+                            <div class="title">
+                                <img src="/fotos/terapia-removebg-preview.png" alt="">
+                        </div>
+                        <p class="prime"><i class="fa-solid fa-check-double"></i> Incluido Con PRIME</p>                           
+                        <button role="button" class="boton" onclick="redireccionar('https://www.youtube.com/watch?v=ntwl8DchUW0&ab_channel=AmazonPrimeVideoDeutschland')"><i class="fas fa-play"></i></button>
+                           <p class="rep">Reproducir</p>
+                           <button role="button" class="boton2" onclick="redireccionar('https://www.themoviedb.org/tv/207713-sebastian-fitzeks-die-therapie')"><i class="fas fa-info-circle"></i></button>
+                       
+                           
+                           
+                        </div>
+                     </div>
+                     <div class="slide slide_2">
+                        <div class="slide-content">
+                            <div class="title">
+                                <img src="/fotos/Evil_Dead_logo.png" alt="">
+                            </div>
+                            <p class="prime"><i class="fa-solid fa-check-double"></i> Incluido Con PRIME</p>
+                            <button role="button" class="boton" onclick="redireccionar('https://www.youtube.com/watch?v=pzq-wnji9ug&ab_channel=CineMovsTrailers')"><i class="fas fa-play"></i></button>
+                            <p class="rep">Reproducir</p>
+                            <button role="button" class="boton2" onclick="redireccionar('https://www.themoviedb.org/movie/713704-evil-dead-rise')"><i class="fas fa-info-circle"></i></button>
+                        </div>
+                    </div>
+                    <div class="slide slide_3">
+                        <div class="slide-content">
+                            <div class="title">
+                                <img src="/fotos/fbi-cbs-removebg-preview.png" alt="">
+                            </div>
+                            <p class="prime"><i class="fa-solid fa-check-double"></i> Incluido Con PRIME</p>
+                            <button role="button" class="boton" onclick="redireccionar('https://www.youtube.com/watch?v=_h3NFrBsJAM&ab_channel=RottenTomatoesTV')"><i class="fas fa-play"></i></button>
+                            <p class="rep">Reproducir</p>
+                            <button role="button" class="boton2" onclick="redireccionar('https://www.themoviedb.org/tv/80748-fbi')"><i class="fas fa-info-circle"></i></button>
+                        </div>
+                    </div>
+                    <div class="slide slide_4">
+                        <div class="slide-content">
+                            <div class="title">
+                                <img src="/fotos/LogoWICK.png" alt="">
+                            </div>
+                            <p class="prime"><i class="fa-solid fa-check-double"></i> Incluido Con PRIME</p>
+                            <button role="button" class="boton" onclick="redireccionar('https://www.youtube.com/watch?v=qEVUtrk8_B4&ab_channel=LionsgateMovies')"><i class="fas fa-play"></i></button>
+                            <p class="rep">Reproducir</p>
+                            <button role="button" class="boton2" onclick="redireccionar('https://www.themoviedb.org/movie/603692-john-wick-chapter-4')"><i class="fas fa-info-circle"></i></button>
+                        </div>
+                    </div>
+            </div>
+            <div id="controls">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+                <div id="arrow-left"><i class="fa-solid fa-chevron-left"></i></div>
+                <div id="arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
+             </div>
+             
+            <div id="bullets">
+               <label for="slide1"></label>
+               <label for="slide2"></label>
+               <label for="slide3"></label>
+               <label for="slide4"></label>
+            </div>
+        </div>
+
+        <div class="peliculas-recomendadas contenedor">
+			<div class="contenedor-titulo-controles">
+				<h3>Películas Recomendadas</h3>
+				<div class="indicadores"></div>
+			</div>
+
+			<div class="contenedor-principal">
+				<button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+
+				<div class="contenedor-carousel">
+					<div class="carousel">
+						<div class="pelicula">
+							<a href="https://www.youtube.com/watch?v=UoSSbmD9vqc&ab_channel=WarnerBros.PicturesEspa%C3%B1a"><img src="img/16.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="https://www.youtube.com/watch?v=CwXOrWvPBPk&ab_channel=RottenTomatoesClassicTrailers"><img src="img/8.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+                            <a href="https://www.youtube.com/watch?v=Y2O4RCdwCGM&ab_channel=SensaCineTRAILERS"><img src="img/9.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="https://www.youtube.com/watch?v=ZgrCZVjPg9g&ab_channel=HBOMaxLatinoam%C3%A9rica"><img src="fotos/harry.jpeg" alt=""></a>
+						</div>
+						<div class="pelicula">
+                            <a href="https://www.youtube.com/watch?v=PnepcoyQY_o&ab_channel=CartoonNetworkLA"><img src="fotos/STEVEN.jpeg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="https://www.youtube.com/watch?v=x9BX94FL3yI&ab_channel=TeoGodinez"><img src="MASSSSSSSSSSSS/avatar.jpeg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="https://www.youtube.com/watch?v=tgdCgVN0sqk&ab_channel=NetflixLatinoam%C3%A9rica"><img src="MASSSSSSSSSSSS/bigMouth.jpeg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="https://www.youtube.com/watch?v=7BEzo97cuSQ&ab_channel=NetflixLatinoam%C3%A9rica"><img src="MASSSSSSSSSSSS/elite.jpeg"  alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="https://www.youtube.com/watch?v=HJy-4hbeyqg&ab_channel=DreamWorksTVEspa%C3%B1ol"><img src="MASSSSSSSSSSSS/EntrenarDragon.jpeg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="https://www.youtube.com/watch?v=QaiUm8jNiCk&ab_channel=UniversalSpain"><img src="MASSSSSSSSSSSS/GATO.jpeg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="https://www.youtube.com/watch?v=MziLH3uow6E&ab_channel=HBOMaxLatinoam%C3%A9rica"><img src="MASSSSSSSSSSSS/HARRY2.jpeg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="https://www.youtube.com/watch?v=qGIFCy0lbaM&ab_channel=CartoonNetworkLA"><img src="MASSSSSSSSSSSS/horadeAventura.jpeg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="https://www.youtube.com/watch?v=r_8Rw16uscg&ab_channel=SonyPicturesEntertainment"><img src="MASSSSSSSSSSSS/KARATE.jpeg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="https://www.youtube.com/watch?v=mejy4pGgJus&ab_channel=SensaCineTRAILERS"><img src="MASSSSSSSSSSSS/Mierda.jpeg" alt=""></a>
+						</div>
+						<div class="pelicula">
+
+							<a href="https://www.youtube.com/watch?v=shW9i6k8cB0&ab_channel=SonyPicturesEntertainment"><img src="MASSSSSSSSSSSS/MILES.jpeg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="https://www.youtube.com/watch?v=BKYJ5AIOU9I&ab_channel=AdultSwim"><img src="MASSSSSSSSSSSS/rick.jpeg" alt=""></a>
+						</div>
+						<div class="pelicula">
+
+							<a href="https://www.youtube.com/watch?v=1s9Yln0YwCw&ab_channel=KinoCheck.com"><img src="MASSSSSSSSSSSS/spiderman.jpeg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="https://www.youtube.com/watch?v=d0JYlUTbv1A&ab_channel=NetflixLatinoam%C3%A9rica"><img src="MASSSSSSSSSSSS/strangerThing.jpeg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="https://www.youtube.com/watch?v=mw-HaoCQe9U&ab_channel=RottenTomatoesTV"><img src="MASSSSSSSSSSSS/XoKitty.jpeg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="https://www.youtube.com/watch?v=-IoeS5470Dg&ab_channel=Yo%2Cadolescente%2FMemoriesofateenager"><img src="MASSSSSSSSSSSS/yoAdolecente.jpeg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="https://www.youtube.com/watch?v=1SqMjrE0J6E&ab_channel=AmazonPrimeVideoEspa%C3%B1a"><img src="MASSSSSSSSSSSS/culapmia.jpeg" alt=""></a>
+						</div>
+					</div>
+				</div>
+
+				<button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+			</div>
+		</div>
+        <div class="columnas-container">
+        <div class="fila1">
+            <a href="https://www.youtube.com/watch?v=19nt1L8nLrA&ab_channel=PrimeVideoM%C3%A9xico"><img src="img/1.jpg" alt=""></a>
+            <a href="https://www.youtube.com/watch?v=o3iEa51nEew&ab_channel=SonyPicturesM%C3%A9xico"><img src="img/2.jpg" alt=""></a>
+            <a href="https://www.youtube.com/watch?v=oCqMDgQbjGM&ab_channel=StarFilmsPeru"><img src="img/3.jpg" alt=""></a>
+            <a href="https://www.youtube.com/watch?v=o1sQbtZpsic&ab_channel=FilmSelectEspa%C3%B1ol"><img src="img/4.jpg" alt=""></a>
+            <a href="https://www.youtube.com/watch?v=KW1w0eioB4o&ab_channel=FilmelierMX"><img src="img/5.jpg" alt=""></a>
+            <a href="https://www.youtube.com/watch?v=H5gWUX2FwRs&ab_channel=SensaCineTRAILERS"><img src="img/6.png" alt=""></a>
+            <a href="https://www.youtube.com/watch?v=yDA1mK6v-ME&ab_channel=AndresRamirez"><img src="img/7.jpg" alt=""></a>
+            <a href="https://www.youtube.com/watch?v=CwXOrWvPBPk&ab_channel=RottenTomatoesClassicTrailers"><img src="img/8.jpg" alt=""></a>
+        </div>
+        <div class="fila2">
+            <a href="https://www.youtube.com/watch?v=Y2O4RCdwCGM&ab_channel=SensaCineTRAILERS"><img src="img/9.jpg" alt=""></a>
+            <a href="https://www.youtube.com/watch?v=iaiRwYXzmjg&ab_channel=PrimeVideoM%C3%A9xico"><img src="img/10.jpg" alt=""></a>
+            <a href="https://www.youtube.com/watch?v=XGk2EfbD_Ps&ab_channel=ZeroMedia"><img src="img/11.jpg" alt=""></a>
+            <a href="https://www.youtube.com/watch?v=E2tvTC5Jfjo&ab_channel=PrimeVideoM%C3%A9xico"><img src="img/12.jpg" alt=""></a>
+            <a href="https://www.youtube.com/watch?v=mIE5HYkzvV0&ab_channel=RottenTomatoesClassicTrailers"><img src="img/13.jpg" alt=""></a>
+            <a href="https://www.youtube.com/watch?v=BJ91mt3nZZw&ab_channel=PrimeVideoM%C3%A9xico"><img src="img/14.jpg" alt=""></a>
+            <a href="https://www.youtube.com/watch?v=KD0H1cvcQG4&ab_channel=PrimeVideoM%C3%A9xico"><img src="img/15.jpg" alt=""></a>
+            <a href="https://www.youtube.com/watch?v=UoSSbmD9vqc&ab_channel=WarnerBros.PicturesEspa%C3%B1a"><img src="img/16.jpg" alt=""></a>
+           
+        </div>
+     
+    </div>
+ 
+        
+    </main>
+    
+</body>
+
+<script src="https://kit.fontawesome.com/12aedfe99c.js" crossorigin="anonymous"></script>
+<script>
+    function Change(x){
+        window.location.href = x;
+    }
+</script>
+<script>
+    function redireccionar(x) {
+      window.location.href = x;
+    }
+  </script>
+
+<script>
+    function logout(){
+   localStorage.removeItem('user');
+}
+</script>
+<script>
+    const fila1 = document.querySelector('.contenedor-carousel-1');
+    const peliculas1 = document.querySelectorAll('.carousel-1 .pelicula');
+    
+    const flechaIzquierda1 = document.getElementById('flecha-izquierda-1');
+    const flechaDerecha1 = document.getElementById('flecha-derecha-1');
+    
+    // ? ----- ----- Event Listener para la flecha derecha del segundo carrusel. ----- -----
+    flechaDerecha1.addEventListener('click', () => {
+        fila1.scrollLeft += fila1.offsetWidth;
+    
+        const indicadorActivo1 = document.querySelector('.indicadores-1 .activo');
+        if (indicadorActivo1.nextSibling) {
+            indicadorActivo1.nextSibling.classList.add('activo');
+            indicadorActivo1.classList.remove('activo');
+        }
+    });
+    
+    // ? ----- ----- Event Listener para la flecha izquierda del segundo carrusel. ----- -----
+    flechaIzquierda1.addEventListener('click', () => {
+        fila1.scrollLeft -= fila1.offsetWidth;
+    
+        const indicadorActivo1 = document.querySelector('.indicadores-1 .activo');
+        if (indicadorActivo1.previousSibling) {
+            indicadorActivo1.previousSibling.classList.add('activo');
+            indicadorActivo1.classList.remove('activo');
+        }
+    });
+    </script>
+
+
+<script>
+const fila = document.querySelector('.contenedor-carousel');
+const peliculas = document.querySelectorAll('.pelicula');
+
+const flechaIzquierda = document.getElementById('flecha-izquierda');
+const flechaDerecha = document.getElementById('flecha-derecha');
+
+// ? ----- ----- Event Listener para la flecha derecha. ----- -----
+flechaDerecha.addEventListener('click', () => {
+	fila.scrollLeft += fila.offsetWidth;
+
+	const indicadorActivo = document.querySelector('.indicadores .activo');
+	if(indicadorActivo.nextSibling){
+		indicadorActivo.nextSibling.classList.add('activo');
+		indicadorActivo.classList.remove('activo');
+	}
+});
+
+// ? ----- ----- Event Listener para la flecha izquierda. ----- -----
+flechaIzquierda.addEventListener('click', () => {
+	fila.scrollLeft -= fila.offsetWidth;
+
+	const indicadorActivo = document.querySelector('.indicadores .activo');
+	if(indicadorActivo.previousSibling){
+		indicadorActivo.previousSibling.classList.add('activo');
+		indicadorActivo.classList.remove('activo');
+	}
+});
+
+
+
+// ? ----- ----- Hover ----- -----
+peliculas.forEach((pelicula) => {
+	pelicula.addEventListener('mouseenter', (e) => {
+		const elemento = e.currentTarget;
+		setTimeout(() => {
+			peliculas.forEach(pelicula => pelicula.classList.remove('hover'));
+			elemento.classList.add('hover');
+		}, 300);
+	});
+});
+
+fila.addEventListener('mouseleave', () => {
+	peliculas.forEach(pelicula => pelicula.classList.remove('hover'));
+});
+</script>
+
+
+
+
+
+<script>
+    const arrowLeft = document.getElementById('arrow-left');
+    const arrowRight = document.getElementById('arrow-right');
+    const slides = document.querySelectorAll('input[name="slider"]');
+
+    arrowLeft.addEventListener('click', () => {
+        const currentSlide = document.querySelector('input[name="slider"]:checked');
+        const currentIndex = Array.from(slides).indexOf(currentSlide);
+
+        // Cambiar a la diapositiva anterior
+        const newIndex = (currentIndex - 1 + slides.length) % slides.length;
+        slides[newIndex].checked = true;
+    });
+
+    arrowRight.addEventListener('click', () => {
+        const currentSlide = document.querySelector('input[name="slider"]:checked');
+        const currentIndex = Array.from(slides).indexOf(currentSlide);
+
+        // Cambiar a la siguiente diapositiva
+        const newIndex = (currentIndex + 1) % slides.length;
+        slides[newIndex].checked = true;
+    });
+</script>
+
+
+</html>

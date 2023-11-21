@@ -1,0 +1,118 @@
+html {
+    background-image: radial-gradient(ellipse at left top,rgba(29,79,115,.2) 10%,#0f171e 80%),radial-gradient(ellipse at left bottom,rgba(29,79,115,.1) 20%,#0f171e 80%);
+    background-color: #0f171e;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+  }
+
+
+  .button, .button2, .button3, .button4{
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .button, .button2, .button3, .button4{
+    border: none;
+    padding: 0;
+    background: transparent;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Agrega una transición para suavizar el efecto */
+  }
+  
+  .button img, .button2 img, .button3 img, .button4 img {
+    width: 120px; /* Tamaño original de la imagen */
+    height: auto;
+  }
+  
+  .button:hover, .button2:hover, .button3:hover, .button4:hover {
+    transform: scale(1.2); /* Ajusta el factor de escala según tus necesidades */
+  }
+  
+  .button button, .button2 button, .button3 button, .button4 button {
+    border: none;
+    padding: 0;
+    background: transparent;
+  }
+  
+  .button img, .button2 img, .button3 img, .button4 img {
+    margin: 0px;
+    height: 120px;
+    width: 120px;
+    text-align: center;
+    border-radius: 100px;
+  }
+  
+  /* Ajustes para la primera imagen */
+  .button img {
+    margin-top: 0px;
+    margin-left: 20px; /* Ajusta el margen izquierdo según tus necesidades */
+  }
+  
+  /* Ajustes para la segunda imagen */
+  .button2 img {
+    margin-top: 0px;
+    margin-left: 20px; /* Ajusta el margen izquierdo según tus necesidades */
+  }
+
+  .button3 img {
+     margin-top: 0px;
+    margin-left: 20px; /* Ajusta el margen izquierdo según tus necesidades */
+  }
+
+  .button4 img {
+    margin-top: 0px;
+    margin-left: 20px; /* Ajusta el margen izquierdo según tus necesidades */
+   
+  }
+ 
+  /*titulo principal*/
+
+  .titulo {
+    margin-top: 0px;
+    margin-left: 160px;
+    color: white;
+  }
+
+  /*nombres abajo de los perfiles*/
+  
+  .nombres1{
+    color: white;
+    margin-left: 70px;
+  }
+
+  .nombres2{
+    color: white;
+    margin-left: 30px;
+  }
+
+  .nombres3{
+    color: white;
+    margin-left: 60px;
+  }
+
+  .nombres4{
+    color: white;
+    margin-left: 0px;
+  }
+
+ /* boton de editar perfiles */
+ 
+ .boton-perfiles button {
+    color: white;
+    background-color: rgb(20, 20, 20);
+    border-color: white;
+    margin-top: 100px;
+    margin-left: 250px;
+    height: 50px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease-out; /* Añade la transición a la propiedad box-shadow */
+    margin-bottom: 120px;
+  }
+  
+  .boton-perfiles button:hover {
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.7); /* Ajusta el tamaño y color del resplandor según tus preferencias */
+  }
+ 

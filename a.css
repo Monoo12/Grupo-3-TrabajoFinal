@@ -1,0 +1,142 @@
+ #slides .slide_1 button {
+    border-radius: 90%;
+    font-size: 50px;
+ }
+ #slides .slide_1 i {
+    margin: 15px;
+ }
+ #slides .slide_1 .rep {
+    margin-left: 40px;
+    display: inline;
+    font-family: Amazon;
+    font-size: 30px;
+ }
+ #slides .slide_1 .prime {
+    margin-left: 50px;
+    display: block;
+    font-family: Amazon;
+    font-size: 20px;
+ }
+ #slides .slide_1 .boton2 {
+    margin-left: 200px;
+ }
+
+ #slides .slide_1 p{
+    margin-left: 40px;
+    text-align: left;
+    font-family: Amazon;
+    font-size: 30px;
+ }
+
+ #slides .slide_1 .title{
+    margin-left: 60px;
+    margin-top: 80px;
+    margin-bottom: 40%;
+ }
+
+ #slides .slide_1 h1{
+    text-align: left;
+    font-family: Amazon;
+    font-size: 50px;
+ }
+
+ #slides .slide_1 {
+    background-image: linear-gradient(to right, #000 40%, transparent 58%), url(/fotos/funca.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover; /* Ensure the background covers the entire area */
+    text-align: left;
+   }
+ #slides .slide_1 button {
+    border-radius: 90%;
+    font-size: 50px;
+ }
+ #slides .slide_1 i {
+    margin: 15px;
+ }
+ #slides .slide_1 .rep {
+    margin-left: 20px;
+    display: inline;
+    font-family: Amazon;
+    font-size: 30px;
+ }
+ #slides .slide_1 .boton2 {
+    margin-left: 200px;
+ }
+ #slides .slide_1 p{
+    text-align: left;
+    font-family: Amazon;
+    font-size: 30px;
+ }
+
+ #slides .slide_1 .title{
+   margin-left: 60px;
+   margin-top: 80px;
+   margin-bottom: 10%;
+ }
+ #slides .slide_1 .title img{
+   max-width: 70%;
+ }
+
+
+
+
+
+
+
+ 
+
+ #slides .slide_2 {
+    background-image: linear-gradient(to right, #000 40%, transparent 58%), url(/fotos/evil.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover; /* Ensure the background covers the entire area */
+    text-align: left;
+   }
+ #slides .slide_2 button {
+    border-radius: 90%;
+    font-size: 50px;
+ }
+ #slides .slide_2 i {
+    margin: 15px;
+ }
+ #slides .slide_2 .rep {
+    margin-left: 20px;
+    display: inline;
+    font-family: Amazon;
+    font-size: 30px;
+ }
+ #slides .slide_2 .boton2 {
+    margin-left: 200px;
+ }
+ #slides .slide_2 .prime {
+    margin-left: 50px;
+    display: block;
+    font-family: Amazon;
+    font-size: 20px;
+ }
+ #slides .slide_2 p{
+    margin-left: 40px;
+    text-align: left;
+    font-family: Amazon;
+    font-size: 30px;
+ }
+
+ #slides .slide_2 .title{
+   margin-left: 60px;
+   margin-top: 80px;
+   margin-bottom: 10%;
+ }
+ #slides .slide_2 .title img{
+   max-width: 22%;
+ }
+
+ #slides .slide_2 h1{
+    text-align: left;
+    font-family: Amazon;
+    font-size: 50px;
+ }
+
+
+
+

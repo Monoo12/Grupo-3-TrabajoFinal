@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <script type="module" src="inverseLogin.js"></script>
+</head>
+<body>
+    <div class="content-container">
+        <div class="regis-cont">
+        <div class="header">
+            <a href="index.html"><img src="/fotos/web_footer_logo._CB462908456_.png" alt=""></a>
+            <h1>Iniciar Sesion</h1>
+        </div>
+        <div class="input-container"> <!-- Agregado contenedor para los inputs -->
+            <p>Email</p>
+            <input type="email" id="email" placeholder="Correo electrónico" required>
+
+            <p>Cotraseña</p>
+            <input type="password" id="password" placeholder="Al menos 6 caracteres" required>
+            <div class="question">
+            <a href="regis.html">Eres Nuevo? Crea Tu cuenta!</a>
+        </div>
+        </div>
+        <div class="button">
+            <button id="loginButton">Iniciar Sesion</button>
+        </div>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+     </div>
+    </div>
+
+    <hr>
+    <footer>
+        
+        <div class="foot">
+            <div class="logo">
+                <img src="/fotos/web_footer_logo._CB462908456_.png" alt="">
+            </div>
+            <div class="buttons">
+                <ul>
+                    <li><a href="#"> Terminos</a></li>
+                    <li><a href="#"> Comentarios</a></li>
+                    <li><a href="#"> Ayuda</a></li>
+                </ul>
+            </div>
+            <div class="copy">
+                <p>© 1996-2023, Amazon.com, Inc. o sus filiales</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script type="module" src="https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js"></script>
+<script type="module" src="https://www.gstatic.com/firebasejs/10.6.0/firebase-analytics.js"></script>
+<script type="module" src="https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js"></script>
+<script type="module" src="https://www.gstatic.com/firebasejs/10.6.0/firebase-database.js"></script>
+
+<script type="module" src="./login.js"></script>
+
+</html>

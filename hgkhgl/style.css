@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+
+
+}
+body{
+    background-color: rgb(81, 27, 229);
+}
+.Title{
+    text-align: center;
+    padding: 50px;
+    color: gold;
+}
+
+.Shops{
+    background-color: blueviolet;
+    width: 800px;
+    height: 500px;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    font-size: 20px;
+    border: 2px solid #333; /* Agrega un borde sólido de 2px de ancho de color negro (#333) */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Agrega una sombra con desplazamiento x: 5px, y: 5px, desenfoque: 10px y color RGBA con opacidad 0.5 */
+}
+.Shops h2{
+    color: lightblue
+}
+.Shops p{
+    font-size: 20px;
+    color: yellow
+}
+.Shops button{
+    color: #020000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.Shops button:hover{
+    transform: scale(1.1);
+    background-color: gold;
+}
+
+.header{
+background-color: rgb(12, 99, 142);
+    height: 80px;
+    width: auto;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    
+}
+.header .logo img{
+    height: 80px;
+    width: auto;
+    border-radius: 100%;
+    padding: 10px;
+    transition: 0.4s;
+}
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+.header nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0; 
+}
+.header nav li{
+    margin-right: 20px;
+}
+.header .nav-links a{
+    font-size: 23px;
+    color: #eceff1;
+    text-decoration: none;    
+}
+
+.header .nav-links li a:hover{
+    color: rgb(1, 253, 190);
+}
+.header .btn button{
+    color: #020000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.header .btn button:hover{
+    transform: scale(1.1);
+}
